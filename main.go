@@ -1,10 +1,12 @@
 package main
 
 import (
-	"getcharzp.cn/router"
+	"web_backend/core"
+	"web_backend/global"
+	"web_backend/initialize"
 )
 
 func main() {
-	r := router.Router()
-	r.Run() // 监听并在 0.0.0.0:8080 上启动服务
+	global.DB = initialize.Gorm()
+	core.RunWindowsServer()
 }

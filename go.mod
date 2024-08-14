@@ -1,4 +1,4 @@
-module getcharzp.cn
+module web_backend
 
 go 1.18
 
