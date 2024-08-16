@@ -12,5 +12,6 @@ func (r *ProblemRouter) InitProblemRouter(router *gin.RouterGroup) {
 	ProblemApi := v1.ApiGroupApp.ProblemApiGroup.ProblemApi
 	{
 		ProblemApiRouter.GET("list", ProblemApi.GetProblemList)
+		ProblemApiRouter.POST("add", ProblemApi.AddProblem)
 	}
 }

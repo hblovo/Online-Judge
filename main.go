@@ -8,5 +8,6 @@ import (
 
 func main() {
 	global.DB = initialize.Gorm()
+	initialize.RegisterUserTables()
 	core.RunWindowsServer()
 }
